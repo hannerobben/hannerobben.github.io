@@ -12,6 +12,7 @@ header {
     height: 3em;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 header img {
@@ -24,7 +25,7 @@ header img {
 nav ul {
     display: flex;
     justify-content: space-between;
-    padding: 1em 10em 1em;
+    padding: 1em 20em 1em 20em;
 }
 
 nav ul li a {
@@ -40,7 +41,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    color: #800000;
+    color: darkgoldenrod;
 }
 
 header a:active {
@@ -49,12 +50,6 @@ header a:active {
 
 header h1 {
     display: none;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-    padding: 0em;
 }
 
 
@@ -73,198 +68,166 @@ section {
     margin: 0 auto;
 }
 
-article h2 {
-    width: 75%;
-    margin: 0 auto;
-    color: #000066;
-}
-
 h2 {
-    font-family: georgia, verdana, arial;
-    font-size: 2.5em;
-    text-align: center;
-    font-weight: bold;
-    padding: 1.1em 0 1.2em 0;
-    line-height: 1.2em;
-}
-
-h3 {
     font-family: "trebuchet ms";
     font-size: 1.9em;
     text-align: center;
     font-weight: bold;
     padding: 0.95em 0px 0.95em 0px;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.4em;
 }
 
 strong {
     font-weight: bold;
     font-size: 1.2em;
-    font-style: italic;
+    
 }
 
 #hanne {
     border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+section p {
+    text-align: center;
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    position: relative;
+    display: inline-block;
+    width: 6em;
+    height: 0;
+    padding: 3em 0%;
+    border: 1px solid #000066;
+    border-radius: 50%;
+    line-height:0.2;
+    border: 1.5px solid #000066;
+    font-weight: bold;
+} 
+
+.circlesmall{
+    position: relative;
+    display: inline-block;
+    width: 5.2em;
+    height: 0;
+    padding: 2.6em 0%;
+    border: 1px solid #000066;
+    border-radius: 50%;
+    line-height:0.2;
+    font-size:0.7em;
+    border: 1.5px solid white;
+}
+
+#circle1 {
+    margin: 0 -1em;
+}
+
+#circle2 {
+    margin: 6em -1em;
+}
+
+#circle3{
+    margin: -3em 0em 0 0em;
+}
+
+#circle4{
+    margin: 5em 0em 0 -2em;
+     z-index: -1;
+}
+
+#circle5{
+    margin: 15.8em 0 0 -10em;
+    line-height: 1;
+     z-index: -1;
+}
+
+#circle6{
+    margin: 4em 0 0 -10em
+}
+
+#circle7{
+     margin: 14.6em 0em 0 0em;
+     z-index: -1;
+}
+
+#circle8{
+    margin: 7em -3em 0 0;
+    line-height: 1;
+    text-align: center;
+}
+
+#edu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
 }
 
 main a {
-    color: #ffff90;
+    color: #000066;
     text-decoration: none;
-    border-bottom: solid 1px #ffff90;
+}
+
+.part{
+    line-height: 1.4;
+    margin-bottom: 0.8em;
 }
 
 main a:hover,
 main a:focus {
-    color: #ffff90;
-    border-bottom: dashed 1px #ffff90;
+    color: darkgoldenrod;
 }
 
-figure ~ section {
+#cv{
+    border: 2px solid #00004d; 
+    padding: 1em;
+}
+
+#cv:hover, #cv:focus {
+    background-color: #00004d;
+    color: white;
+}
+
+#skills{
+    
+}
+
+.blue{
+    background-color:  #00004d;
+    margin-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+}
+
+.squares{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.square{
+    display: inline-block;
+    width: 5em;
+    padding: 1.7em 0 1.7em 0;
+    border: 1px solid white;
     text-align: center;
-    padding-bottom: 1.5em;
+    margin: 0.3em 0.3em 1.6em 0.3em;
 }
 
-article section {
-    border: solid 1px white;
-    border-radius: 5px;
-    margin-bottom: 0.6em;
-    background-color: #004800;
-}
-
-article section h4 {
-    float: left;
-    padding: 0.6em 0em 0.6em 0.9em;
-    font-weight: bold;
-    font-size: 1.05em;
-}
-
-article section p {
-    padding: 0.6em 0.9em 0.6em 0.9em;
-    clear: both;
-    background-color: #006600;
-}
-
-article section p:nth-child(3),
-article section p:nth-child(4),
-article section p:nth-child(5) {
-    padding: 0em 0.6em 0.6em 0.9em;
-}
-
-h2 ~ h3 {
-    padding-top: 0;
-}
-
-h4 ~ time {
-    float: right;
-    padding: 0.6em 0.9em 0.6em 0em;
-}
-
-section section {
-    width: 97%;
-    height: 15.7em;
-}
-
-section section img {
-    float: right;
-    margin: 0.6em;
-}
-
-section section h4 {
-    float: left;
-}
-
-section section ul {
-    float: left;
-    clear: left;
-    list-style-type: square;
-    margin-left: 2em;
-    width: 48%;
-}
-
-section section p {
-    float: left;
-    clear: left;
-    background-color: #004800;
-    font-size: 0.8em;
-    width: 50%;
-}
-
-#links {
-    float: left;
-    width: 35%;
-    margin-left: 12.5%;
-    margin-bottom: 2em;
-}
-
-#links img {
-    width: 94.8%;
-    height: auto;
-    padding: 2.6%;
-    background-color: white;
-    margin-bottom: 1em
-}
-
-#links p {
-    padding-bottom: 1em;
-}
-
-#rechts {
-    float: right;
-    width: 30.5%;
-    margin-right: 12.5%;
-}
-
-#rechts img {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    background-color: white;
-    margin-bottom: 1em
-}
-
-#rechts h2 {
-    height: 2.05em;
-    padding-bottom: 0.3em;
-}
-
-#rechts p {
-    padding-bottom: 1em;
-}
-
-h2 ~ p {
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-address {
-    border: solid 1px white;
-    border-radius: 5px;
-    margin-bottom: 2em;
-    background-color: #004800;
-    width: 50%;
-    height: 18em;
-    float: left;
-}
-
-address p {
-    padding: 0.3em 0 0.3em 1em;
-}
-
-address p:first-child {
-    margin-top: 1.1em;
-}
-
-#map {
-    float: right;
-    margin-right: 12.5%;
-    width: 36%;
-    height: 18em;
-}
-
-#workshops {
-    background-color: none;
+.square:hover{
+    background-color: #f5f5f5;
+    color: #00004d;
 }
 
 
@@ -272,11 +235,10 @@ address p:first-child {
 
 footer {
     background-color: white;
-    height: 5.3em;
-    color: darkgreen;
-    font-family: impact, "arial black", verdana;
-    font-size: 0.95em;
-    letter-spacing: 0.05em;
+    height: 4em;
+    color: #00004d;
+    font-size: 1em;
+    font-family: "trebuchet ms";
     margin-top: 2.6em;
     clear: both;
 }
@@ -413,61 +375,16 @@ label[for=workshop] {
 
 @media screen and (max-width: 960px) {
     /* --------------------- header --------------------- */
-    header {
-        height: 15.4em;
-    }
-    header img {
-        height: 15em;
-    }
+    
     nav ul {
-        display: flex;
-        flex-direction: column;
-        float: right;
-        text-align: right;
-        padding: 0.2em 1em 0.1em 0em;
+        padding: 1em 10em 1em 10em;
     }
-    nav ul li {
-        padding: 0.5em;
-    }
+    
     /* --------------------- main --------------------- */
     section {
         width: 85%;
     }
-    #links {
-        float: none;
-        width: 75%;
-        margin-bottom: 0;
-    }
-    #links img {
-        width: 96.2%;
-        height: auto;
-    }
-    #rechts {
-        float: none;
-        width: 75%;
-    }
-    address {
-        float: none;
-        width: 88%;
-        margin: 0 auto;
-        margin-bottom: 2em;
-    }
-    #map {
-        float: none;
-        width: 75%;
-        margin: 0 auto;
-    }
-    section section h4 {
-        width: 37%;
-    }
-    section section ul {
-        width: 36%;
-        line-height: 1.6em;
-    }
-    section section p {
-        width: 37%;
-        line-height: 2em;
-    }
+    
     /* --------------------- form --------------------- */
     form {
         width: 80%;
@@ -512,29 +429,11 @@ label[for=workshop] {
 
 @media screen and (max-width: 684px) {
     /* --------------------- header --------------------- */
-    header {
-        height: 15.4em;
-    }
-    header img {
-        display: none;
-    }
-    h2 {
-        padding-top: 0.4em;
-        padding-bottom: 0.8em;
-    }
+    
     nav ul {
-        float: none;
-        display: flex;
-        flex-direction: column;
-        padding: 0.2em 0 0.1em 0;
+        padding: 1em 1em 1em 1em;
     }
-    nav ul li {
-        text-align: center;
-        padding: 0.5em;
-    }
-    nav ul li a {
-        text-align: center;
-    }
+    
     /* --------------------- main --------------------- */
     section {
         width: 95%;
