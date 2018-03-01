@@ -190,6 +190,21 @@ main a:focus {
     color: #00004d;
 }
 
+#contactlinks{
+    display: flex;
+    justify-content: center;
+}
+
+#linkedin, #github {
+    margin: 0 1em 0 1em;
+}
+
+#contactlinks p{
+    color: #00004d;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
 
 /* --------------------- footer --------------------- */
 
@@ -209,7 +224,6 @@ footer p {
 
 footer p:first-child {
     margin: 1.6em 3em;
-    display: inline-block;
 }
 
 footer p:last-child {
@@ -222,22 +236,6 @@ footer img {
     height: 2.5em;
     width: auto;
     margin-top: 0.6em;
-}
-
-footer img:hover {
-    
-}
-
-footer a:nth-child(2) {
-    color: #006600;
-    text-decoration: none;
-    float: right;
-    margin-top: 2em;
-}
-
-footer a:hover,
-footer a:focus {
-    text-decoration: underline;
 }
 
 
