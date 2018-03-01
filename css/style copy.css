@@ -90,17 +90,9 @@ strong {
     
 }
 
-#hanne, #developer, #architect {
+#hanne {
     border-radius: 50%;
-    margin: 0em 1em 5em 1em;
-}
-
-#developer:hover{
-    content: url('../img/developer2.png');
-}
-
-#architect:hover{
-    content: url('../img/architect2.png');
+    margin-bottom: 1em;
 }
 
 section p {
@@ -110,6 +102,70 @@ section p {
 .circles{
     display: flex;
     justify-content: center;
+}
+
+.circle{
+    position: relative;
+    display: inline-block;
+    width: 6em;
+    height: 0;
+    padding: 3em 0%;
+    border: 1px solid #000066;
+    border-radius: 50%;
+    line-height:0.2;
+    border: 1.5px solid #000066;
+    font-weight: bold;
+} 
+
+.circlesmall{
+    position: relative;
+    display: inline-block;
+    width: 5.2em;
+    height: 0;
+    padding: 2.6em 0%;
+    border: 1px solid #000066;
+    border-radius: 50%;
+    line-height:0.2;
+    font-size:0.7em;
+    border: 1.5px solid white;
+}
+
+#circle1 {
+    margin: 0 -1em;
+}
+
+#circle2 {
+    margin: 6em -1em;
+}
+
+#circle3{
+    margin: -3em 0em 0 0em;
+}
+
+#circle4{
+    margin: 5em 0em 0 -2em;
+     z-index: -1;
+}
+
+#circle5{
+    margin: 15.8em 0 0 -10em;
+    line-height: 1;
+     z-index: -1;
+}
+
+#circle6{
+    margin: 4em 0 0 -10em
+}
+
+#circle7{
+     margin: 14.6em 0em 0 0em;
+     z-index: -1;
+}
+
+#circle8{
+    margin: 7em -3em 0 0;
+    line-height: 1;
+    text-align: center;
 }
 
 #edu{
@@ -147,8 +203,8 @@ main a:focus {
     
 }
 
-.green{
-    background-color:  #6BB2A6;
+.blue{
+    background-color:  #00004d;
     margin-top: 2em;
     padding-bottom: 2em;
     color: white;
@@ -162,8 +218,8 @@ main a:focus {
 
 .square{
     display: inline-block;
-    width: 6em;
-    padding: 2em 0 2em 0;
+    width: 5em;
+    padding: 1.7em 0 1.7em 0;
     border: 1px solid white;
     text-align: center;
     margin: 0.3em 0.3em 1.6em 0.3em;
