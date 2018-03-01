@@ -95,12 +95,28 @@ strong {
     margin: 0em 1em 5em 1em;
 }
 
+#developer{
+    background-image: url('../img/developer.png');
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    transition: all 0.2s ease-in-out;
+}
+
 #developer:hover{
-    content: url('../img/developer2.png');
+    background-image: url('../img/developer2.png');
+}
+
+#architect{
+    background-image: url('../img/architect.png');
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    transition: all 0.2s ease-in-out;
 }
 
 #architect:hover{
-    content: url('../img/architect2.png');
+        background-image: url('../img/architect2.png');
 }
 
 section p {
@@ -203,9 +219,9 @@ footer p:last-child {
 }
 
 footer img {
-    height: 3em;
+    height: 2.5em;
     width: auto;
-    margin-top: 0.3em;
+    margin-top: 0.6em;
 }
 
 footer img:hover {
