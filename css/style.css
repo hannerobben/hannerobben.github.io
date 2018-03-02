@@ -41,11 +41,11 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    color: darkgoldenrod;
+    color: #9B0000;
 }
 
 header a:active {
-    color: #779705;
+    color: #9B0000;
 }
 
 header h1 {
@@ -92,32 +92,22 @@ strong {
 
 #hanne, #developer, #architect {
     border-radius: 50%;
-    margin: 0em 1em 5em 1em;
 }
 
 #developer{
-    background-image: url('../img/developer.png');
     border-radius: 50%;
     height: 200px;
     width: 200px;
     transition: all 0.2s ease-in-out;
-}
-
-#developer:hover{
-    background-image: url('../img/developer2.png');
 }
 
 #architect{
-    background-image: url('../img/architect.png');
     border-radius: 50%;
     height: 200px;
     width: 200px;
     transition: all 0.2s ease-in-out;
 }
 
-#architect:hover{
-        background-image: url('../img/architect2.png');
-}
 
 section p {
     text-align: center;
@@ -146,7 +136,7 @@ main a {
 
 main a:hover,
 main a:focus {
-    color: darkgoldenrod;
+    color: #9B0000;
 }
 
 #cv{
@@ -203,6 +193,56 @@ main a:focus {
     color: #00004d;
     font-weight: bold;
     margin-top: 2em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #6BB2A6;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+  height: 200px;
+    width: 200px;
+    margin: 0em 1em 5em 1em;
+    border-radius: 50%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textred {
+  color: #720101;
+  font-size: 12px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+    width: 10.8em;
+    line-height: 1.6;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
 }
 
 
