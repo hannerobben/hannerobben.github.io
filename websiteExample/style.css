@@ -47,15 +47,16 @@ color: #6099f5;
 text-decoration: underline;
 }
 
-section {
+article {
     width: 100%;
     margin: 0 auto;
     margin-top: 30px;
     background-color: #fff;
     min-height: 640px;
+    padding-bottom: 5em;
 }
 
-article {
+section {
     width: 40%;
     float: left;
     margin: 0 auto;
@@ -68,27 +69,32 @@ article {
     min-height: 100%;
 }
 
-article img {
+section img {
     width: 80%;   
 }
 
 #salco{
-    margin: 4em 0 0 0;
+    margin: 3em 0 4em 0;
 }
 
 #ucll {
-    margin: 4.5em 0 0 0;
+    margin: 4.5em 0 0em 0;
+}
+
+#salcosection{
+    
 }
 
 footer{
-    position:relative;
-    width: 100%;
-    margin: 0 auto;
+    color: white;
+    text-align: center;
     margin-top:20px;
     height:50px;
-    clear:both;
     background-color: #072a4d;
     border-radius: 10px 10px 0px 0px;
+}
+footer p {
+    padding-top: 1em;
 }
 
 form{
