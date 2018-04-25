@@ -139,7 +139,7 @@ main a:focus {
     color: #9B0000;
 }
 
-#cv{
+#cv, #cv:visited{
     border: 2px solid #00004d; 
     padding: 1em;
 }
@@ -168,7 +168,7 @@ main a:focus {
 
 .square{
     display: inline-block;
-    width: 6em;
+    width: 6.2em;
     padding: 2em 0 2em 0;
     border: 1px solid white;
     text-align: center;
