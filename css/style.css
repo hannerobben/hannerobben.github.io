@@ -139,14 +139,18 @@ main a:focus {
     color: #9B0000;
 }
 
-#cv, #cv:visited{
+.download, .download:visited{
     border: 2px solid #00004d; 
     padding: 1em;
 }
 
-#cv:hover, #cv:focus {
+.download:hover, .download:focus {
     background-color: #00004d;
     color: white;
+}
+
+#cv {
+    margin-bottom: 2em;
 }
 
 #skills{
@@ -189,10 +193,14 @@ main a:focus {
     margin: 0 1em 0 1em;
 }
 
+#mail{
+    margin-left: 0.7em;
+}
+
 #contactlinks p{
     color: #00004d;
     font-weight: bold;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .overlay {
@@ -249,6 +257,28 @@ main a:focus {
     text-align: center;
     margin-top: 2em;
 }
+
+.projects{
+    background: #e6e6e6;
+    width: 90%;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+#music, #iotrash, #chat, #yahtzee, #othello, #hangman{
+    height: 80%;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+#othello, #hangman{
+    height: 60%;
+    width: 40%;
+}
+
 
 
 /* --------------------- footer --------------------- */
