@@ -8,64 +8,72 @@ html {
 /* --------------------- header --------------------- */
 
 header {
-    background-color: white;
-    height: 3em;
+    background-color: black; 
+    height: 60px;
     position: fixed;
     width: 100%;
     z-index: 1;
+    font-family: "trebuchet ms";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header img {
-    float: left;
-    height: 8em;
-    width: auto;
-    padding-left: 1.5em;
+.headerleft {
+    color: white;
+    padding-left: 60px;
+}
+
+.headerleft span {
+    color: #6BB2A6;
+}
+
+.headerleft h1 {
+    font-family: impact;
+    font-size: 20px;
+    width: 200px; 
+}
+
+.headerright {
+    width: 350px; 
+}
+
+.fa-linkedin:hover {
+    color: #6BB2A6;
+}
+
+.linkedinnav {
+    padding-right: 60px;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    padding: 1em 20em 1em 20em;
 }
 
 nav ul li a {
-    color: #000066;
+    color: white;
     text-decoration: none;
-    font-size: 1em;
-    font-family: "trebuchet ms";
-}
-
-#currentlink {
-    text-decoration: underline;
+    font-size: 14px;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-    color: #9B0000;
+    color: #6BB2A6;
 }
 
 header a:active {
-    color: #9B0000;
-}
-
-header h1 {
-    display: none;
+    color: #6BB2A6;
 }
 
 
 /* --------------------- main --------------------- */
 
 main {
-    font-family: "trebuchet ms";
-    font-size: 1em;
-    line-height: 2em;
+    font-family: "arial";
+        //"Montserrat, sans-serif, trebuchet ms";
     color: #000000;
     padding-top: 4em;
-}
-
-section {
-    width: 75%;
-    margin: 0 auto;
 }
 
 h2 {
@@ -84,323 +92,216 @@ h3 {
     margin-bottom: 0.4em;
 }
 
-strong {
-    font-weight: bold;
-    font-size: 1.2em;
-    
+#anchorabout {
+    height: 15px;
 }
 
-#hanne, #developer, #architect {
+.panel {
+    height: 400px;
+    margin: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+
+.panelright {
+    line-height: 25px;
+}
+
+.panelright p {
+    margin-bottom: 20px;
+}
+
+.panelcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panelright1, #panelright2, #panelright3, #panelright4, #panelright5 {
+    width: 480px;
+    height: 230px;
+}
+
+#hanne {
     border-radius: 50%;
+    margin-right: 30px;
 }
 
-#developer{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    transition: all 0.2s ease-in-out;
+.big {
+    font-size: 28px;
+    font-family: "arial black";
+    margin-bottom: 25px;
+    text-align: center;
 }
 
-#architect{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    transition: all 0.2s ease-in-out;
+.panel span{
+    color: #6BB2A6;
 }
 
+.extrainfo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.extrainfo ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.infoicon {
+    padding: 0 30px;
+}
+
+.fas:hover, .fab:hover {
+    color: #6BB2A6;
+    cursor: pointer;
+}
+
+table {
+    width: 500px;
+}
+
+table td {
+    text-align: center;
+    line-height: 30px;
+}
+
+.coding, .concepts {
+    height: 40px;
+}
 
 section p {
     text-align: center;
 }
 
-.circles{
-    display: flex;
-    justify-content: center;
-}
-
-#edu{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2em;
-}
-
-main a {
-    color: #000066;
+main a, main a:visited {
+    color: black;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.part{
-    line-height: 1.4;
-    margin-bottom: 0.8em;
+main a:hover {
+    color: darkcyan;
 }
 
-main a:hover,
-main a:focus {
-    color: #9B0000;
+#about a span:hover {
+    color: darkcyan;
 }
 
 .download, .download:visited{
-    border: 2px solid #00004d; 
-    padding: 1em;
+    color: #6BB2A6;
+    text-decoration: none;
 }
 
 .download:hover, .download:focus {
-    background-color: #00004d;
-    color: white;
+    color: darkcyan;
+    text-decoration: none;
 }
 
-#cv {
-    margin-bottom: 2em;
+#contact {
+    margin: 100px 0;
+    line-height: 30px;
 }
 
-#skills{
+.bold {
+    font-weight: bold;
+}
+
+#contact a {
+    color: #6BB2A6;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+#anchorprojects {
+    height: 80px;
+}
+
+.project {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 30px 60px;
+}
+
+.projectcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.green{
-    background-color:  #6BB2A6;
-    margin-top: 2em;
-    padding-bottom: 2em;
-    color: white;
+.project:nth-child(odd)  {
+    background: #f5f5f5;
 }
 
-.squares{
-    color: white;
-    display: flex;
-    justify-content: center;
+.left {
+    min-width: 40%;
+    max-width: 550px;
 }
 
-.square{
-    display: inline-block;
-    width: 6.2em;
-    padding: 2em 0 2em 0;
-    border: 1px solid white;
-    text-align: center;
-    margin: 0.3em 0.3em 1.6em 0.3em;
+.project h3 {
+    margin-bottom: 30px;
 }
 
-.square:hover{
-    background-color: #f5f5f5;
-    color: #00004d;
+.project p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 25px;
 }
 
-#contactlinks{
-    display: flex;
-    justify-content: center;
+.info {
+    margin-top: 20px;
 }
 
-#linkedin, #github {
-    margin: 0 1em 0 1em;
+.project span {
+    color: #6BB2A6;
 }
 
-#mail{
-    margin-left: 0.7em;
+.right {
+    max-width: 550px;
+    padding-left: 40px
 }
 
-#contactlinks p{
-    color: #00004d;
-    font-weight: bold;
-    margin-top: 1em;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #6BB2A6;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.container {
-  position: relative;
-  height: 200px;
-    width: 200px;
-    margin: 0em 1em 5em 1em;
-    border-radius: 50%;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.textred {
-  color: #720101;
-  font-size: 12px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-    width: 10.8em;
-    line-height: 1.6;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: left;
-}
-
-#visit{
-    text-align: center;
-    margin-top: 2em;
-}
-
-.projects{
-    background: #e6e6e6;
-    width: 90%;
-    padding: 2em;
-    margin-bottom: 2em;
-}
-
-#music, #iotrash, #chat, #yahtzee, #othello, #hangman{
-    height: 80%;
-    width: 80%;
+.project img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
-
-#othello, #hangman{
-    height: 60%;
-    width: 40%;
-}
-
-
 
 /* --------------------- footer --------------------- */
 
 footer {
     background-color: white;
-    height: 4em;
+    height: 60px;
     color: #00004d;
-    font-size: 1em;
+    font-size: 16px;;
     font-family: "trebuchet ms";
-    margin-top: 2.6em;
-    clear: both;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer p {
-    display: inline-block;
+    padding: 22px 0 0 60px;
 }
 
-footer p:first-child {
-    margin: 1.6em 3em;
-}
-
-footer p:last-child {
-    float: right;
-    margin-right: 3.3em;
-    margin-top: 0.3em;
-}
-
-footer img {
-    height: 2.5em;
-    width: auto;
-    margin-top: 0.6em;
-}
-
-
-/* --------------------- form --------------------- */
-
-form {
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 0.6em;
-    border: solid 2px white;
-    border-radius: 5px;
-}
-
-form p {
-    text-align: center;
-}
-
-legend {
-    display: none;
-}
-
-fieldset p:nth-child(5) {
-    margin-bottom: 0.6em;
-    color: #ffff90;
-}
-
-input,
-select,
-textarea {
-    border: 2px solid white;
-    border-radius: 8px;
-    margin: 0.55em;
-    padding: 0.2em;
-    line-height: 0.7em;
-    outline: 0 none;
-    color: #006600;
-    font-size: 15px;
-    background-color: white;
-    width: 26.5em;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-label:focus {
-    border: 2px solid white;
-    border-radius: 0.55em;
-    padding: 0.2em;
-    line-height: 0.7em;
-    outline: 0 none;
-    background-color: #006600;
-    color: white;
-    width: 26.5em;
-}
-
-label,
-input,
-textarea {
-    display: inline-block;
-}
-
-select {
-    width: 27em;
-}
-
-select:focus {
-    width: 27em;
-}
-
-label {
-    width: 9em;
-    text-align: right;
-}
-
-input[type="submit"] {
-    width: 7em;
-    margin-bottom: 1.5em;
-}
-
-label[for=opmerkingen] {
-    width: 21em;
-    margin-top: 0.6em;
-    text-align: center;
-}
-
-label[for=voornaam],
-label[for=naam],
-label[for=emailadres],
-label[for=workshop] {
-    color: #ffff90;
+footer a {
+    padding: 18px 60px 0 0;
 }
 
 
@@ -409,51 +310,79 @@ label[for=workshop] {
 @media screen and (max-width: 960px) {
     /* --------------------- header --------------------- */
     
-    nav ul {
-        padding: 1em 10em 1em 10em;
+    .headerright {
+        width: 300px; 
+    }
+    
+    .headerleft {
+        padding-left: 20px;
+    }
+    
+    .linkedinnav {
+        padding-right: 20px;
     }
     
     /* --------------------- main --------------------- */
-    section {
-        width: 85%;
+
+    .panel {
+        margin: 60px 20px;
+        padding: 0 40px;
     }
     
-    /* --------------------- form --------------------- */
-    form {
-        width: 80%;
+    table {
+        width: 100%;
     }
-    label,
-    input,
-    textarea,
-    label[for=opmerkingen],
-    select,
-    input[type="submit"] {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    label:focus,
-    input:focus,
-    textarea:focus,
-    label[for=opmerkingen],
-    select:focus,
-    input[type="submit"]:focus {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    label {
+
+    table td {
         text-align: center;
+        padding: 0 8px;
     }
-    textarea {
-        margin-top: 0em;
-        margin-bottom: 1.5em
+    
+    #panelright1, #panelright2, #panelright3, #panelright4, #panelright5 {
+        width: 380px;
+        height: 230px;
+        min-width: 380px;
     }
-    label[for=opmerkingen] {
-        margin-top: 1em;
+    
+    #hanne {
+        max-width: 300px;
+        max-height: 300px;
+        width: 35%;
+        height: 35%;
     }
-    input {
-        text-align: center;
+
+    .extrainfo ul {
+        padding: 20px 0 10px 0;
+    }
+
+    .infoicon {
+        padding: 0 22px;
+    }
+    
+    
+    .left {
+        min-width: 40%;
+        max-width: 50%;
+    }
+    
+    .right {
+        width: 60%;
+    }
+    
+    .project {
+        height: auto;
+        padding: 30px 20px;
+    }
+    
+    
+    /* --------------------- footer --------------------- */
+    
+    footer p {
+        padding: 22px 0 0 20px;
+    }
+
+    footer a {
+        padding: 18px 20px 0 0;
     }
 }
 
@@ -464,104 +393,123 @@ label[for=workshop] {
     /* --------------------- header --------------------- */
     
     nav ul {
-        padding: 1em 1em 1em 1em;
+        color: yellow;
     }
     
+    .headerleft {
+        color: white;
+    }
+
+    .headerleft span {
+        display: none;
+    }
+
+    .headerleft h1 {
+        width: 80px; 
+    }
+    
+    .linkedinnav {
+        display: none;
+    }
+    
+    .headerright {
+        margin-right: 20px;
+         width: 200px;  
+    }    
+    
     /* --------------------- main --------------------- */
-    section {
-        width: 95%;
-    }
-    article section h4 {
-        float: none;
-        padding: 1em;
-    }
-    article section time {
-        float: none;
+    
+    .panel {
+        height: auto;
+        margin: 20px;
         display: block;
-        padding: 0.1em;
-        padding-left: 1.1em;
-        border-top: solid 1px white;
+        padding: 20px 10px 10px 10px;
     }
-    section section {
+
+    .panelcontainer {
+        display: block;
+    }
+
+    #panelright1, #panelright2, #panelright3, #panelright4, #panelright5 {
+        width: auto;
         height: auto;
+        margin-left: 0px;
+        min-width: auto;
     }
-    section section img {
-        float: none;
-        width: 96.5%;
-        height: auto;
-        margin-left: 1.7%
+    
+    .panelright {
+        line-height: 20px;
+        margin-left: 0px;
     }
-    section section h4 {
-        float: none;
-        width: 92%;
+    
+    .panelrightcontent {
+        height: 215px;
+    }
+    
+    .panelright p {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    
+    #hanne {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 80%;
+    }
+    
+    .big {
+        margin: 25px 0;
+    }
+
+    .extrainfo ul {
+        padding: 20px 0 10px 0;
+    }
+
+    .infoicon {
+        padding: 0 16px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table td {
         text-align: center;
-        padding-top: 0;
+        line-height: 30px;
+        font-size: 12px;
     }
-    section section p {
-        float: none;
-        width: 94%;
+    
+    .project {
+        display: block;
+        height: auto;
+        padding: 20px 20px;
     }
-    section section ul {
-        float: none;
-        width: 92%;
-        margin-bottom: 1em;
+
+    .projectcontainer {
+        display: block;   
     }
-    section section time {
-        border: none;
-        padding: 0.1em 0 0.1em 0;
-    }
-    #links {
-        width: 95%;
-        margin-left: auto;
-    }
-    #links img {
-        width: 95%;
+    
+    .left {
+       min-width: 100%;
+       max-width: 100%;
+       padding: 20px 0 60px 0;
         height: auto;
     }
-    #rechts {
-        width: 95%;
-        margin-right: auto;
+    
+    .right {
+        width: 100%;
+        padding: 0 0 30px 0;
+        height: auto;
     }
-    address {
-        width: 99%;
+    
+    .project img {
+        max-height: 400px;
+        max-width: 100%;
+        margin: 0 auto;
     }
-    address p {
-        padding-left: 0.6em;
-    }
-    #map {
-        width: 94%;
-    }
-    /* --------------------- footer --------------------- */
-    footer {
-        font-size: 0.8em;
-        letter-spacing: 0.5px;
-    }
-    footer p:first-child {
-        display: none;
-    }
-    footer a:nth-child(2) {
-        display: none;
-    }
-    footer p:last-child {
-        float: none;
-        display: block;
-        margin-left: 44%;
-        margin-right: auto;
-        padding-top: 0.3em;
-    }
-    /* --------------------- form --------------------- */
-    form {
-        width: 95%;
-    }
-    input,
-    textarea,
-    select {
-        width: 80%;
-    }
-    label:focus,
-    input:focus,
-    textarea:focus,
-    select:focus {
-        width: 80%;
-    }
+    
+   /*   --------------------- footer --------------------- */
+    
+    
 }

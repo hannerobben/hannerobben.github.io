@@ -1,190 +1,307 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>E-Portfolio Hanne Robben</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-   
+
     <link rel="stylesheet" media="all" href="css/reset.css">
     <link rel="stylesheet" media="all" href="css/style.css">
+    <script src="https://kit.fontawesome.com/56b7e26eeb.js"></script>
 </head>
 
 <body>
     <header>
+       <div class="headerleft">
+        <h1>HANNE ROBBEN <span>Software Developer and Designer</span></h1>
+       </div>
+       <div class="headerright">
         <nav>
             <ul>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#anchorabout">About <span class="hide">me</span></a></li>
+                <li><a href="#anchorprojects"><span class="hide">My </span>work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Title</h1>
+        </div>
+        <a href="https://www.linkedin.com/in/hannerobben/">
+        <span id="icon" class="linkedinnav" style="font-size: 28px; color: White;"><i class="fab fa-linkedin"></i></span>
+        </a>
     </header>
-    
-    <main>
-        
-        <section id="about">
-            <h2>E-PORTFOLIO<br>HANNE ROBBEN</h2>
-            <div class="circles">
-                <div class="container">
-                    <img id="developer" src="img/dev.png" alt="developer" title="developer" height="200" width="200">
-                    <div class="overlay">
-                        <div class="text"><strong>DEVELOPER</strong></div>
-                        <div class="textred"><strong>CODING TECHNOLOGY PROBLEM SOLVING</strong></div>
-                    </div>
-                </div>
 
-               <div class="container">
-                    <img id="hanne" src="img/hannesq.png" alt="hanne" title="hanne" height="200" width="200">
-                </div>
-                
-                <div class="container">
-                    <img id="architect" src="img/archi.png" alt="architect" title="architect" height="200" width="200">
-                    <div class="overlay">
-                        <div class="text"><strong>ARCHITECT</strong></div>
-                        <div class="textred"><strong>DESIGN<br> CREATIVITY<br> EYE FOR DETAIL</strong></div>
-                    </div>
-                </div>
+    <main>
+       
+       <div id="anchorabout"></div>
+       <section id="about">
+       <div class="panel">
+       <div class="panelcontainer">
+        <img id="hanne" src="img/profile.jpg" alt="hanne" title="hanne" height="250" width="250">
+        <div class="panelright">
+           <div class="panelrightcontent">
+            <div id="panelright1" style="display:block">
+                <h1 class="big">Hi, I'm Hanne</h1>
+                <p>Graduated in <span>Software Development</span> and <span>Architecture</span></p>
+                <p>Passionate about <span>coding</span> and <span>design</span></p>
             </div>
+            <div id="panelright2" style="display:none">
+                <h1 class="big">My education</h1>
+                <p><a href="http://onderwijsaanbod.leuven.ucll.be/opleidingen/n/SC_52335187.htm#activetab=selectie">Bachelor <span>Applied IT: Software Development</span> @ UCLL</a></p>
+                <p><a href="https://onderwijsaanbod.kuleuven.be//opleidingen/n/CQ_51522852.htm#activetab=diploma_omschrijving">Master <span>Architecture: Advanced Architectural Design</span> @ KULeuven</a></p>
+                <p><a href="https://onderwijsaanbod.kuleuven.be//opleidingen/n/CQ_51522830.htm#activetab=diploma_omschrijving">Bachelor <span>Architecture: Architectural Design</span> @ KULeuven</a></p>
+            </div>
+            <div id="panelright3" style="display:none">
+                <h1 class="big">My experience</h1>
+                <p><a href="https://hatchsoftware.be">Internship <span>Web Developer</span> @ Hatch</a></p>
+                <p><a href="http://www.materialise.com/">Student Job <span>Software Developer</span> @ Materialise</a></p>
+                <p><a href="http://www.materialise.com/">Student Job <span>Usability Tester</span> @ Materialise</a></p>
+                <p><a class="infolink" href="https://www.kuleuven.be/kuleuven/">Student Job <span>Technical Drafter</span> @ KULeuven</a></p>
+            </div>
+            <div id="panelright4" style="display:none">
+                <h1 class="big">My skills</h1>
+                 <table>
+                      <tr>
+                        <td>JavaScript</td>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td>Angular</td>
+                      </tr>
+                      <tr>
+                        <td>Java</td>
+                        <td>Spring</td>
+                        <td>SQL</td>
+                        <td>C#</td>
+
+                      </tr >
+                      <tr class="coding">
+                        <td>WPF</td>
+                        <td>C</td>
+                        <td>C++</td>
+                        <td>Python</td>
+                      </tr>
+                      <tr class="concepts">
+                        <td>GIT</td>
+                        <td>UI / UX</td>
+                        <td>RESTful API</td>
+                        <td>SCRUM</td>
+                      </tr>
+                      <tr class="design">
+                        <td>Photoshop</td>
+                        <td>Illustrator</td>
+                        <td>Indesign</td>
+                        <td>Autocad</td>
+                      </tr>
+                    </table> 
+            </div>
+            <div id="panelright5" style="display:none">
+                <h1 class="big">My CV</h1>
+                <p>To download my full CV <a class="download" href="img/HanneRobbenCV.pdf" download>click here</a> </p>
+            </div>
+            </div>
+            <div class="extrainfo">
+                <ul>
+                    <li id="icon1" class="infoicon" onclick="show('panelright1','panelright2', 'panelright3', 'panelright4', 'panelright5')">
+                    <span id="icon" style="font-size: 22px; color: #6BB2A6;"><i class="fas fa-user-alt"></i></span></li>
+                    <li id="icon2" class="infoicon" onclick="show('panelright2','panelright1', 'panelright3', 'panelright4', 'panelright5')">
+                    <span id="icon" style="font-size: 22px; color: Lightgrey;"><i class="fas fa-graduation-cap"></i></span></li>
+                    <li id="icon3" class="infoicon" onclick="show('panelright3','panelright1', 'panelright2', 'panelright4', 'panelright5')">
+                    <span id="icon" style="font-size: 22px; color: Lightgrey;"><i class="fas fa-briefcase"></i></span></li>
+                    <li id="icon4" class="infoicon" onclick="show('panelright4','panelright1', 'panelright2', 'panelright3', 'panelright5')">
+                    <span id="icon" style="font-size: 22px; color: Lightgrey;"><i class="fab fa-keycdn"></i></span></li>
+                    <li id="icon5" class="infoicon" onclick="show('panelright5','panelright1', 'panelright2', 'panelright3', 'panelright4')">
+                    <span id="icon" style="font-size: 22px; color: Lightgrey;"><i class="fas fa-file-alt"></i></span></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        </div>
+           </div>
+        </section>
+        
+        <script>
+            function show(show, hide1, hide2, hide3, hide4) {
+                document.getElementById(show).style.display="block";
+                document.getElementById(hide1).style.display="none";
+                document.getElementById(hide2).style.display="none";
+                document.getElementById(hide3).style.display="none";
+                document.getElementById(hide4).style.display="none";
+            }
             
-            <div id="edu">
-                <section>
-                    <h3>EDUCATION</h3>
-                    <div class="part">
-                    <p><a href="http://onderwijsaanbod.leuven.ucll.be/opleidingen/n/SC_52335187.htm#activetab=selectie">BACHELOR APPLIED INFORMATION TECHNOLOGY</a></p>
-                    <p>UCLL | [2016 - 2019]</p>
-                    </div>
-                    <div class="part">
-                    <p><a href="https://onderwijsaanbod.kuleuven.be//opleidingen/n/CQ_51522852.htm#activetab=diploma_omschrijving">MASTER ADVANCED ARCHITECTURAL DESIGN</a></p>
-                    <p>KULEUVEN | [2014 - 2017]</p>
-                    </div>
-                    <div class="part">
-                    <p><a href="https://onderwijsaanbod.kuleuven.be//opleidingen/n/CQ_51522830.htm#activetab=diploma_omschrijving">BACHELOR ARCHITECTURAL DESIGN</a></p>
-                    <p>KULEUVEN | [2011 - 2014]</p>
-                    </div>
-                </section>
-                <section>
-                    <h3>WORK EXPERIENCE</h3>
-                    <div class="part">
-                    <p><a href="http://www.materialise.com/">MATERIALISE</a></p>
-                    <p>SOFTWARE ADDITIVE MANUFACTURING</p>
-                    <p>[2017]</p>
-                    </div>
-                     <div class="part">
-                    <p><a href="https://www.kuleuven.be/kuleuven/">KULEUVEN</a></p>
-                    <p>TECHNICAL SERVICES</p>
-                    <p>[2016]</p>
-                    </div>
-                </section>
-            </div> 
-            <p id="cv"><a class="download" href="img/HanneRobbenCV.pdf" download>DOWNLOAD CV</a></p>
-            <p id="comp"><a class="download" href="img/Competentiematrix_HanneRobben.pdf" download>DOWNLOAD SKILL MATRIX</a></p>
-        </section>
+            var icon1 = document.getElementById("icon1");
+            var icon2 = document.getElementById("icon2");
+            var icon3 = document.getElementById("icon3");
+            var icon4 = document.getElementById("icon4");
+            var icon5 = document.getElementById("icon5");
+
+            icon1.addEventListener("click", function() {
+                this.children[0].style.color =  "#6BB2A6";
+                icon2.children[0].style.color = "Lightgrey";
+                icon3.children[0].style.color = "Lightgrey";
+                icon4.children[0].style.color = "Lightgrey";
+                icon5.children[0].style.color = "Lightgrey";
+            }, false);
+            
+            icon2.addEventListener("click", function() {
+                this.children[0].style.color =  "#6BB2A6";
+                icon1.children[0].style.color = "Lightgrey";
+                icon3.children[0].style.color = "Lightgrey";
+                icon4.children[0].style.color = "Lightgrey";
+                icon5.children[0].style.color = "Lightgrey";
+            }, false);
+            
+            icon3.addEventListener("click", function() {
+                this.children[0].style.color =  "#6BB2A6";
+                icon1.children[0].style.color = "Lightgrey";
+                icon2.children[0].style.color = "Lightgrey";
+                icon4.children[0].style.color = "Lightgrey";
+                icon5.children[0].style.color = "Lightgrey";
+            }, false);
+            
+            icon4.addEventListener("click", function() {
+                this.children[0].style.color =  "#6BB2A6";
+                icon1.children[0].style.color = "Lightgrey";
+                icon2.children[0].style.color = "Lightgrey";
+                icon3.children[0].style.color = "Lightgrey";
+                icon5.children[0].style.color = "Lightgrey";
+            }, false);
+            
+            icon5.addEventListener("click", function() {
+                this.children[0].style.color =  "#6BB2A6";
+                icon1.children[0].style.color = "Lightgrey";
+                icon2.children[0].style.color = "Lightgrey";
+                icon3.children[0].style.color = "Lightgrey";
+                icon4.children[0].style.color = "Lightgrey";
+            }, false);
+            
+        </script>
+    
         
-        <div class="green">
-        <section id="skills">
-            <h2>SKILLS</h2>
-            <p>PROGRAMMING | COMPUTER TECHNOLOGY</p>
-            <div class="squares">
-                <p class="square">JAVA</p>
-                <p class="square">PYTHON</p>
-                <p class="square">C++</p>
-                <p class="square">JS</p>
-                <p class="square">HTML</p>
-                <p class="square">CSS</p>
-                <p class="square">SQL</p>
-                <p class="square">GIT</p>
-                <p class="square">LINUX</p> 
-            </div>
-            <p>SOFTWARE</p>
-            <div class="squares">
-                <p class="square">AUTOCAD</p>
-                <p class="square">SKETCHUP</p>
-                <p class="square">INDESIGN</p>
-                <p class="square">PHOTOSHOP</p>
-                <p class="square">ILLUSTRATOR</p>
-                <p class="square">EXCEL</p>
-                
-            </div>
-        </section>
-        </div>
-        
+        <div id="anchorprojects"></div>
         <div>
-        <section id="projects">
-            <h2>PROJECTS</h2>
-            <section class="projects">
-                <h3>Music Rating</h3>
-                <p>– Dynamic website –</p>
-                <p>– Website to rate and view music albums –</p>
-                <p>| Spring MVC | JPA | Derby | Payara | Jenkins | REST API | Electron |</p>
-                <p>– Semester project –</p>
-                <img id="music" src="img/musicrating.png" alt="musicrating" title="musicrating" >
+            <section id="projects">
+                <h2>My work</h2>
+
+                <section class="project">
+                    <div class="projectcontainer">
+                        <section class="left">
+                            <h3>Pulso Reportal</h3>
+                            <p>A bespoke web application consisting of an interactive data visualisation dashboard, secure login system, user and data management and file upload system. For this project I was part of a professional team using an Agile methodology working together with a real client. I wrote front end as well as back end code with attention to UI, UX and web security.</p>
+                            <p class="info">Internship project - Three months - Teamwork</p>
+                            <p class="keytech"><span>Key technologies:</span> Angular | TypeScript | Redux | HTML | CSS | Java | Spring | Hibernate | RESTful API | AWS | SCRUM</p>
+                        </section>
+                        <section class="right">
+                            <img id="pulso" src="img/pulso.png" alt="pulso" title="pulso">
+                        </section>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <div class="projectcontainer">
+                        <section class="left">
+                            <img id="edublend" src="img/edublend.png" alt="edublend" title="edublend">
+                        </section>
+                        <section class="right">
+                            <h3>EduBlend Emulator</h3>
+                            <p>A test and development framework for educational exercises for the EduBlend platform. These exercises, written in HTML and JavaScript, can be uploaded to the application to be simulated and edited in an in-browser code editor. Feedback related to the exercises' output and code is given. We also created a few template exercises using technologies such as natural language processing (NLP) and speech recognition.</p>
+                            <p class="info">Final Bachelor Project - One month - Teamwork</p>
+                            <p class="keytech"><span>Key technologies:</span> JavaScript | HTML | CSS | JSON | Python | NLP</p>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <div class="projectcontainer">
+                        <section class="left">
+                            <h3>Music Rating</h3>
+                            <p>A dynamic web application to rate music albums. Using an existing REST web service, any album's cover image and track listing can be loaded. Deployed automatically using Jenkins. Additionally, I created an Electron app using my own application's REST API.</p>
+                            <p class="info">University project - One semester - Individual</p>
+                            <p class="keytech"><span>Key technologies:</span> HTML | CSS | Java | Spring MVC | RESTful API | Maven | Jenkins | JPA | Electron</p>
+                        </section>
+                        <section class="right">
+                            <img id="music" src="img/mr.png" alt="musicrating" title="musicrating">
+                        </section>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <div class="projectcontainer">
+                        <section class="left">
+                            <img id="chat" src="img/chat.png" alt="chat" title="chat">
+                        </section>
+                        <section class="right">
+                            <h3>Chat ...</h3>
+                            <p>A chat and blog web application, using different asynchronous JavaScript technologies. In addition to this, I developed a simple Angular application to manage the users of the chat application.</p>
+                            <p class="info">University project - One semester - Individual</p>
+                            <p class="keytech"><span>Key technologies:</span> HTML | CSS | JavaScript | JQuery | AJAX | Angular | Java</p>
+                        </section>
+                    </div>
+                </section>
+
+
+
+                <section class="project">
+                    <div class="projectcontainer">
+                        <section class="left">
+                            <img id="reversi" src="img/reversi.png" alt="reversi" title="reversi">
+                        </section>
+                        <section class="right">
+                            <h3>Reversi</h3>
+                        <p>A C# and WPF desktop application based on the famous Othello game. Players put stones on the board to catch the other player's stones. </p>
+                            <p class="info">University project - One semester - Individual</p>
+                            <p class="keytech"><span>Key technologies:</span> C# | WPF</p>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <div class="projectcontainer">
+                        <section class="left">
+                            <h3>Yahtzee</h3>
+                            <p>A Java desktop application based on the famous Yahtzee game. Play with multiple players and roll dice to score as many points as possible. Developed using Object Oriented design patterns such as MVC, Observer, Strategy, State, Simple factory, Singleton and Facade.</p>
+                            <p class="info">University project - One semester - Individual</p>
+                            <p class="keytech"><span>Key technologies:</span> Java | JavaFX | OOP concepts and patterns</p>
+                        </section>
+                        <section class="right">
+                            <img id="yahtzee" src="img/yahtzee.png" alt="yahtzee" title="yahtzee">
+                        </section>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <div class="projectcontainer">
+                        <section class="left">
+                            <img id="iotrash" src="img/iotrash.jpg" alt="iotrash" title="iotrash">
+                        </section>
+                        <section class="right">
+                            <h3>IoTrash</h3>
+                            <p>An Internet of Things project using distance sensors in bins to measure the fullness of the bin. This data is sent to a database and queried by our website to show this information in real time on a floor plan.</p>
+                            <p class="info">University projectweek - One week - Teamwork</p>
+                            <p class="keytech"><span>Key technologies:</span> IoT | Raspberry Pi | Sensors | Python | Java | SQL | HTML | CSS </p>
+                        </section>
+                    </div>
+                </section>
+
             </section>
-            <section class="projects">
-                <h3>Chat...</h3>
-                <p>– Asynchronous website –</p>
-                <p>– Chat and blog website –</p>
-                <p>| JS | AJAX | JQuery | node.js | Angular |</p>
-                <p>– Semester project –</p>
-                <img id="chat" src="img/chat.png" alt="chat" title="chat" >
-            </section>
-            <section class="projects">
-                <h3>Yahtzee</h3>
-                <p>– Desktop Application –</p>
-                <p>– Yahtzee game –</p>
-                <p>| Java | OOO concepts and patterns |</p>
-                <p>– Semester project –</p>
-                <img id="yahtzee" src="img/yahtzee.png" alt="yahtzee" title="yahtzee" >
-            </section>
-            <section class="projects">
-                <h3>IoTrash</h3>
-                <p>– Internet of Things project –</p>
-                <p>– Smart trashcan that measures how full it is in percent. Visualised on a dynamic website –</p>
-                <p>| Sensor | Raspberry Pi | Python | Java | SQL |</p>
-                <p>- Group project in one week –</p>
-                <img id="iotrash" src="img/iotrash.jpg" alt="iotrash" title="iotrash" >
-            </section>
-            <section class="projects">
-                <h3>Othello</h3>
-                <p>– Desktop Application –</p>
-                <p>– Othello game –</p>
-                <p>| C# | WPF |</p>
-                <img id="othello" src="img/othello.png" alt="othello" title="othello" >
-            </section>
-            <section class="projects">
-                <h3>Hangman</h3>
-                <p>– Python script – </p>
-                <p>– Simple Hangman game –</p>
-                <p>| Python | Command Line |</p>
-                <img id="hangman" src="img/hangman.png" alt="hangman" title="hangman" >
-            </section> 
-        </section>
         </div>
-        
-        <div class="green">
+
         <section id="contact">
-            <h2>CONTACT</h2>
-            <div id="contactlinks">
-                <a href="https://www.linkedin.com/in/hanne-robben-42927313a/"><img id="linkedin" src="img/linkedin.png" alt="linkedin" title="linkedin" height="50" width="50"></a>
-                <a href="https://github.com/hannerobben"><img id="github" src="img/github.png" alt="github" title="github" height="50" width="50"></a>
-                <img id="mail" src="img/MAIL.png" alt="mail" title="mail" height="65" width="65">
-                <p>HANNEROBBEN@HOTMAIL.COM</p>
-            </div>
+            <h2>Contact</h2>
+            <p>I am currently based in Coventry, UK.</p>
+            <p>You can reach me via email: <span class="bold">hannerobben@hotmail.com</span></p>
+            <p>Or take a look at my <a href="https://www.linkedin.com/in/hannerobben/">LinkedIn profile</a>.</p>
         </section>
-        </div>
-         
+
     </main>
 
-<footer>
-    <p>&copy; Hanne Robben | 2018</p>
-    <p><a href="https://www.linkedin.com/in/hanne-robben-42927313a/"><img src="img/linkedin.png" width="5" height="5"></a>
-    </p>
-    
-</footer>
+    <footer>
+        <p> Hanne Robben &copy; 2018 </p>
+        <a href="https://www.linkedin.com/in/hannerobben/">
+            <span id="icon" style="font-size: 28px; color: Black;"><i class="fab fa-linkedin"></i></span>
+        </a>
+    </footer>
 </body>
-
 
 
 </html>
