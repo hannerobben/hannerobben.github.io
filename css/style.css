@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myImpact;
+    src: url(impact.ttf);
+}
+
 
 html {
     background-color: #081831;
@@ -33,7 +38,7 @@ header {
 }
 
 .headerleft h1 {
-    font-family: impact;
+    font-family: myImpact;
     font-size: 25px;
     width: 220px; 
     letter-spacing: 5px;
@@ -112,7 +117,7 @@ main {
 }
 
 h2 {
-    font-family: impact;
+    font-family: myImpact;
     font-size: 2.1em;
     font-weight: bold;
     padding: 0.95em 0px 0.95em 0px;
@@ -237,7 +242,7 @@ a {
 
 .big {
     font-size: 47px;
-    font-family: impact;
+    font-family: myImpact;
     margin-bottom: 50px;
     letter-spacing: 11px;
 }
@@ -1036,9 +1041,21 @@ footer a {
         height: 100px;   
     }
     
+    .headerright {
+        margin-right: 0;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+
     .panel {
-        width: 400px;
+        width: 100%;
         padding: 0;
+    }
+    
+    .panelcontainer {
+        padding: 0 15px;
     }
     
     .skills {
@@ -1067,12 +1084,16 @@ footer a {
     }
     
     #intro {
-    -webkit-animation: none;
-    -moz-animation: none;
-    -o-animation: none;
-    animation: none;
-    opacity: 1;
-    height: 90vh;
-}
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+        animation: none;
+        opacity: 1;
+        height: 90vh;
+    }
+    
+    footer {
+        padding-left: 0;
+    }
     
 }
