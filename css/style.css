@@ -109,6 +109,7 @@ main {
     color: #000000;
     padding-top: 4em;
     position: relative;
+    overflow: hidden;
 }
 
 .main-container {
@@ -590,7 +591,7 @@ footer p span {
 }
 
 footer a {
-    padding: 18px 60px 0 0;
+    padding: 14px 60px 0 0;
 }
 
 
@@ -1046,7 +1047,7 @@ footer a {
     }
     
     h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .panel {
